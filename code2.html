@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ópera | Información Confiable para Decidir Mejor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">:root {
+    --primary: #0a3d61;
+    --accent-green: #27ae60;
+    --bg-white: #FFF;
+    --bg-accent: #F8F9FA;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-light: #e2e8f0
+    }
+body {
+    font-family: "Manrope", sans-serif
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+.hero-gradient {
+    background: radial-gradient(circle at 70% 30%, rgba(39, 174, 96, 0.04) 0%, rgba(255, 255, 255, 0) 50%), radial-gradient(circle at 10% 80%, rgba(10, 61, 97, 0.02) 0%, rgba(255, 255, 255, 0) 50%)
+    }
+.step-connector {
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 12px 12px
+    }
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px
+    }
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9
+    }
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px
+    }
+.whatsapp-pattern {
+    background-color: #e5ddd5;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBcrNsUO5xypRUwY6Cr0QgdItkWE6_IOUC31HKBfyWpj4SVyjsNBIWoa51FpHWAFDVABm7LK_YMARRugdRrBBNmnNv3xXrR_ofxq3zPKRZHo8ne_58FLcD1c1ibt5rMJWR-R-g4RrPtN9KntJoWaHTVJ4M2uafWpolVvMcMhWF4tf4S3_LcuGe2xpGGw1JNBQl2mym-VOi_Ob1r_-CZFgMegwGGix3KQGRf4hn_JGymXV-nMoksS_vvvf46IYaKrEEM1H4qO0VOscc)
+    }</style>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a3d61",
+                        "accent-green": "#27ae60",
+                        "surface-light": "#F8F9FA",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-white text-[var(--text-main)] antialiased font-display">
+<nav class="sticky top-0 z-50 w-full border-b border-[var(--border-light)] bg-white/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-accent-green">
+<svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-primary">Ópera</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-[var(--text-muted)] hover:text-accent-green transition-colors" href="#">Solución</a>
+<a class="text-sm font-semibold text-[var(--text-muted)] hover:text-accent-green transition-colors" href="#arquitectura">Arquitectura</a>
+<a class="text-sm font-semibold text-[var(--text-muted)] hover:text-accent-green transition-colors" href="#alertas">Alertas</a>
+<a class="text-sm font-semibold text-[var(--text-muted)] hover:text-accent-green transition-colors" href="#beneficios">Beneficios</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-accent-green text-white text-sm font-bold py-2.5 px-6 rounded-lg hover:bg-emerald-600 transition-all shadow-lg shadow-emerald-500/20">
+                Solicita una demo
+            </button>
+</div>
+</div>
+</nav>
+<main class="max-w-[1440px] mx-auto">
+<section class="relative overflow-hidden pt-20 pb-24 md:pt-32 md:pb-40 hero-gradient">
+<div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="flex-1 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-green/10 border border-accent-green/20 text-accent-green text-xs font-bold uppercase tracking-wider mb-8">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-green opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-accent-green"></span>
+</span>
+                        Información 100% verificada
+                    </div>
+<h1 class="text-4xl md:text-6xl font-extrabold leading-[1.1] text-primary mb-8">
+                        No solo muestra información, facilita la<span class="text-accent-green"> toma de decisión.</span>
+                    </h1>
+<p class="text-lg md:text-xl text-[var(--text-muted)] mb-12 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Plataforma que conecta, ordena y corrige los datos de tu negocio para informarte y <span class="text-primary font-bold">notificarte en tiempo real</span> para tomar decisiones estratégicas basadas en <span class="text-primary font-bold">datos reales</span>.
+                    </p>
+<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
+<button class="w-full sm:w-auto bg-accent-green text-white text-base font-bold py-4 px-10 rounded-xl hover:bg-emerald-600 transition-all shadow-xl shadow-emerald-500/20">
+                            Solicita una demo
+                        </button>
+<button class="w-full sm:w-auto border-2 border-slate-200 bg-white text-primary text-base font-bold py-4 px-10 rounded-xl hover:bg-slate-50 transition-colors">
+                            Ver casos de éxito
+                        </button>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="relative bg-white p-3 rounded-2xl shadow-2xl border border-slate-100 ring-1 ring-slate-200/50">
+<div class="aspect-[4/3] bg-white rounded-xl overflow-hidden">
+<div class="w-full h-full bg-center bg-cover" data-alt="Modern business dashboard on a laptop with minimalist charts and metrics" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkKEkheCD-yBZjsAFTkCjUo-RFbNRX8PiaG2mbZKu7B4QHw8RP3GtMQNcc_itflJYDWi_yObxddli3SNhUb_z3Ldmh9CUHK2CRDkol4wjl10sXzBp4LumNZOByX1v_8v3Z8utNiCYoFz12uy77HaIqo1UJzdcsWSK0t6L6ko-RW65dBbvSzdfs_1Alxqc2hnMtHoDcEwUtk8yqAu8nihS74JoAA47YwxgX_sYCcyBcRYvL77NLYOLdKq_KzGjDo8nbZq9-NDPFoNk')"></div>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-2xl border border-slate-50 hidden md:block w-72">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-8 rounded-full bg-emerald-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-accent-green text-xl font-bold">verified</span>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Sincronización</span>
+</div>
+<div class="text-3xl font-extrabold mb-2 text-primary">99.98%</div>
+<div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+<div class="bg-accent-green h-full w-[99.9%]"></div>
+</div>
+<p class="mt-3 text-[10px] text-slate-400 font-medium">Actualizado hace 2 minutos</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-light overflow-hidden" id="arquitectura">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center mb-24">
+<h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6">Arquitectura inteligente de datos</h2>
+<p class="text-[var(--text-muted)] max-w-2xl mx-auto text-lg">Nuestro motor procesa la información en 4 etapas críticas para garantizar que cada KPI sea una verdad absoluta.</p>
+</div>
+<div class="relative">
+<div class="hidden lg:block absolute top-1/2 left-0 w-full h-1 step-connector -translate-y-1/2 opacity-20"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+<div class="relative">
+<div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="size-16 rounded-2xl bg-primary/5 flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">account_tree</span>
+</div>
+<div class="absolute top-6 right-8 text-slate-100 font-black text-6xl select-none">01</div>
+<h3 class="text-xl font-bold mb-4 text-primary">Onboarding</h3>
+<p class="text-[var(--text-muted)] text-sm leading-relaxed">Conexión automatizada con tus fuentes de datos actuales sin fricciones.</p>
+</div>
+</div>
+<div class="relative lg:mt-12">
+<div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="size-16 rounded-2xl bg-emerald-50 flex items-center justify-center text-accent-green mb-8 group-hover:bg-accent-green group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">fact_check</span>
+</div>
+<div class="absolute top-6 right-8 text-slate-100 font-black text-6xl select-none">02</div>
+<h3 class="text-xl font-bold mb-4 text-primary">Estandarización</h3>
+<p class="text-[var(--text-muted)] text-sm leading-relaxed">Limpieza inteligente y unificación de formatos de manera masiva.</p>
+</div>
+</div>
+<div class="relative">
+<div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="size-16 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-600 mb-8 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<div class="absolute top-6 right-8 text-slate-100 font-black text-6xl select-none">03</div>
+<h3 class="text-xl font-bold mb-4 text-primary">Integración</h3>
+<p class="text-[var(--text-muted)] text-sm leading-relaxed">Vinculación de todas las áreas de tu negocio en una estructura única.</p>
+</div>
+</div>
+<div class="relative lg:mt-12">
+<div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="size-16 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">insights</span>
+</div>
+<div class="absolute top-6 right-8 text-slate-100 font-black text-6xl select-none">04</div>
+<h3 class="text-xl font-bold mb-4 text-primary">Inteligencia</h3>
+<p class="text-[var(--text-muted)] text-sm leading-relaxed">Visualización de insights enfocados en rentabilidad garantizada.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center mb-20">
+<h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6">Dashboards que sí representan tu negocio</h2>
+<p class="text-[var(--text-muted)] max-w-3xl mx-auto text-lg">Olvida las gráficas confusas. Ópera traduce miles de celdas en tableros vibrantes, limpios y accionables para tu equipo directivo.</p>
+</div>
+<div class="relative bg-slate-50 p-6 md:p-10 rounded-[2.5rem] border border-slate-100 shadow-inner">
+<div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
+<div class="h-14 border-b border-slate-100 flex items-center justify-between px-6 bg-slate-50/50">
+<div class="flex gap-2">
+<div class="size-3 rounded-full bg-red-400"></div>
+<div class="size-3 rounded-full bg-amber-400"></div>
+<div class="size-3 rounded-full bg-emerald-400"></div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-48 h-2 bg-slate-200 rounded-full"></div>
+<div class="size-8 rounded-full bg-slate-200"></div>
+</div>
+</div>
+<div class="p-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+<div class="p-6 rounded-2xl bg-blue-50/50 border border-blue-100 hover:scale-105 transition-transform">
+<p class="text-[10px] font-bold text-blue-600 uppercase mb-2">Ventas Mensuales</p>
+<p class="text-3xl font-extrabold text-primary">$420,580</p>
+<span class="text-[10px] text-blue-500 font-bold">+12% vs mes anterior</span>
+</div>
+<div class="p-6 rounded-2xl bg-emerald-50/50 border border-emerald-100 hover:scale-105 transition-transform">
+<p class="text-[10px] font-bold text-emerald-600 uppercase mb-2">Margen Neto</p>
+<p class="text-3xl font-extrabold text-primary">32.4%</p>
+<span class="text-[10px] text-emerald-500 font-bold">Optimizado con IA</span>
+</div>
+<div class="p-6 rounded-2xl bg-orange-50/50 border border-orange-100 hover:scale-105 transition-transform">
+<p class="text-[10px] font-bold text-orange-600 uppercase mb-2">Tickets Abiertos</p>
+<p class="text-3xl font-extrabold text-primary">12</p>
+<span class="text-[10px] text-orange-500 font-bold">88% Resueltos hoy</span>
+</div>
+<div class="p-6 rounded-2xl bg-indigo-50/50 border border-indigo-100 hover:scale-105 transition-transform">
+<p class="text-[10px] font-bold text-indigo-600 uppercase mb-2">CAC Promedio</p>
+<p class="text-3xl font-extrabold text-primary">$18.2</p>
+<span class="text-[10px] text-indigo-500 font-bold">-5% Eficiencia</span>
+</div>
+</div>
+<div class="w-full aspect-[21/9] bg-center bg-cover rounded-2xl shadow-lg" data-alt="High-fidelity analytics dashboard showing business growth metrics" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuKFF6SSJA0lpV2fe5YWBgfnXG2nD6e4hiKknOJilYfaeJi5uojZoFOHGTICGGWFA7DIBWcgTFkQIyHzkC8kLsPkH3B8rwM4SDF01GN730ddlCV-xL3KyW2JtGWtcsIBjj-LYPT5ujJE1DMPWnyovsG3IpJGnI8odR5ZCLD66sqpSks9t1I1w8T9DQ8F4dt1qCmy8UBZ3k1hjNagmwHmIyvGLzcGLE_uLhGjob8ewPZY-TF6WM1OAZAEPXh4RGGdYI-OY52ad2Qco')"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-light border-y border-slate-100" id="alertas">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6">Centro de Control de Alertas Inteligentes</h2>
+<p class="text-[var(--text-muted)] max-w-2xl mx-auto text-lg">Ópera no solo muestra información, te avisa y te permite actuar en tiempo real ante eventos críticos.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<div class="lg:col-span-5 bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col min-h-[600px]">
+<div class="p-6 border-b border-slate-100 bg-slate-50/50 flex justify-between items-center">
+<div>
+<h3 class="font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-green">notifications_active</span>
+                                Alertas Recientes
+                            </h3>
+<p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Hoy, 24 de Octubre</p>
+</div>
+<span class="bg-accent-green/10 text-accent-green text-[10px] font-bold px-2 py-1 rounded-full">4 Nuevas</span>
+</div>
+<div class="flex-1 overflow-y-auto p-6 space-y-4 custom-scrollbar">
+<div class="p-4 rounded-2xl border border-red-100 bg-red-50/30 hover:bg-red-50 transition-colors">
+<div class="flex justify-between mb-2">
+<span class="text-[10px] font-extrabold text-red-600 uppercase">Stock Crítico</span>
+<span class="text-[10px] text-slate-400">Hace 5 min</span>
+</div>
+<p class="text-sm font-bold text-primary mb-3">Stock bajo de <span class="text-red-600">Producto A</span>. Quedan solo 5 unidades en almacén central.</p>
+<button class="text-xs font-bold text-primary flex items-center gap-1 hover:text-accent-green transition-colors">
+                                Ver Detalle <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="p-4 rounded-2xl border border-emerald-100 bg-emerald-50/30 hover:bg-emerald-50 transition-colors">
+<div class="flex justify-between mb-2">
+<span class="text-[10px] font-extrabold text-emerald-600 uppercase">Venta Mayorista</span>
+<span class="text-[10px] text-slate-400">Hace 12 min</span>
+</div>
+<p class="text-sm font-bold text-primary mb-3">Se realizó una compra superior a <span class="text-emerald-600">S/ 5,000</span> por Cliente Corp.</p>
+<button class="text-xs font-bold text-primary flex items-center gap-1 hover:text-accent-green transition-colors">
+                                Ver Detalle <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="p-4 rounded-2xl border border-blue-100 bg-blue-50/30 hover:bg-blue-50 transition-colors">
+<div class="flex justify-between mb-2">
+<span class="text-[10px] font-extrabold text-blue-600 uppercase">Meta de Ventas</span>
+<span class="text-[10px] text-slate-400">Hace 45 min</span>
+</div>
+<p class="text-sm font-bold text-primary mb-3">Ventas del día de Hoy alcanzaron los <span class="text-blue-600">S/ 950.00</span>.</p>
+<button class="text-xs font-bold text-primary flex items-center gap-1 hover:text-accent-green transition-colors">
+                                Ver Detalle <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="p-4 rounded-2xl border border-amber-100 bg-amber-50/30 hover:bg-amber-50 transition-colors">
+<div class="flex justify-between mb-2">
+<span class="text-[10px] font-extrabold text-amber-600 uppercase">Logro Vendedor</span>
+<span class="text-[10px] text-slate-400">Hace 1 hora</span>
+</div>
+<p class="text-sm font-bold text-primary mb-3">El vendedor <span class="text-amber-600">Carlos X</span> superó los S/ 6,000 en el mes.</p>
+<button class="text-xs font-bold text-primary flex items-center gap-1 hover:text-accent-green transition-colors">
+                                Ver Detalle <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-white p-8 rounded-3xl border border-slate-200 shadow-xl flex flex-col justify-between overflow-hidden relative">
+<div class="relative z-10">
+<h3 class="text-2xl font-extrabold text-primary mb-4">Configura tus propios disparadores</h3>
+<p class="text-[var(--text-muted)] mb-10 max-w-md">Tú decides qué es importante. Configura umbrales personalizados y recibe la información directamente en tu chat de WhatsApp.</p>
+</div>
+<div class="flex-1 flex items-center justify-center pt-4">
+<div class="relative w-full max-w-[320px] aspect-[9/18.5] bg-slate-900 rounded-[3rem] border-8 border-slate-800 shadow-2xl overflow-hidden ring-1 ring-slate-700">
+<div class="h-6 flex items-center justify-between px-6 pt-2">
+<span class="text-[8px] font-bold text-white">10:45</span>
+<div class="flex gap-1 items-center">
+<span class="material-symbols-outlined text-[10px] text-white">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-[10px] text-white">wifi</span>
+<span class="material-symbols-outlined text-[10px] text-white">battery_full</span>
+</div>
+</div>
+<div class="h-full whatsapp-pattern flex flex-col">
+<div class="bg-[#075E54] p-3 pt-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-white text-lg">arrow_back</span>
+<div class="size-8 rounded-full bg-emerald-100 flex items-center justify-center overflow-hidden">
+<div class="text-accent-green scale-50">
+<svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z" fill="currentColor"></path>
+</svg>
+</div>
+</div>
+<div>
+<p class="text-white text-[10px] font-bold leading-none">Ópera</p>
+<p class="text-emerald-100 text-[8px]">En línea</p>
+</div>
+</div>
+<div class="flex-1 p-4 space-y-4">
+<div class="bg-white rounded-xl rounded-tl-none p-3 shadow-sm max-w-[85%] relative">
+<p class="text-[10px] font-bold text-emerald-600 mb-1">Ópera Alertas</p>
+<p class="text-[11px] text-slate-800 font-bold mb-1">⚠️ Alerta de Stock Crítico</p>
+<p class="text-[10px] text-slate-600 mb-2">Producto A: quedan <span class="font-bold text-red-600">5 unidades</span> en almacén central.</p>
+<div class="mt-2 border-t border-slate-100 pt-2">
+<div class="w-full py-1.5 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center gap-1 cursor-pointer hover:bg-emerald-100 transition-colors">
+<span class="text-[9px] font-bold text-emerald-700">Revisar Detalle</span>
+<span class="material-symbols-outlined text-[10px] text-emerald-700">open_in_new</span>
+</div>
+</div>
+<span class="absolute bottom-1 right-2 text-[8px] text-slate-400">10:42 AM</span>
+</div>
+<div class="bg-white rounded-xl rounded-tl-none p-3 shadow-sm max-w-[85%] relative">
+<p class="text-[10px] font-bold text-emerald-600 mb-1">Ópera Alertas</p>
+<p class="text-[11px] text-slate-800 font-bold mb-1">💰 Venta Superior Detectada</p>
+<p class="text-[10px] text-slate-600 mb-2">Se registró una compra de <span class="font-bold text-emerald-600">S/ 5,800.00</span> por Cliente Corp.</p>
+<div class="mt-2 border-t border-slate-100 pt-2">
+<div class="w-full py-1.5 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center gap-1">
+<span class="text-[9px] font-bold text-emerald-700">Ver Transacción</span>
+</div>
+</div>
+<span class="absolute bottom-1 right-2 text-[8px] text-slate-400">10:54 AM</span>
+</div>
+</div>
+<div class="bg-[#F0F2F5] p-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400 text-lg">add</span>
+<div class="flex-1 bg-white h-7 rounded-full px-3 flex items-center">
+<span class="text-[10px] text-slate-400">Mensaje...</span>
+</div>
+<div class="size-7 rounded-full bg-[#128C7E] flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">mic</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-emerald-50 p-6 mt-8 rounded-2xl border border-emerald-100 flex flex-col md:flex-row items-center gap-6 relative z-10">
+<div class="size-12 shrink-0 bg-white rounded-xl flex items-center justify-center shadow-md">
+<svg class="size-8 text-emerald-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.522-2.961-2.639-.087-.117-.708-.941-.708-1.794s.446-1.27.604-1.446c.159-.175.348-.21.463-.21s.232.001.333.005c.106.005.25.013.392.35.144.347.493 1.201.536 1.287.043.085.072.186.015.3-.058.114-.088.186-.175.286-.087.1-.184.223-.263.299-.089.086-.183.18-.079.359.103.179.46.759.985 1.226.676.599 1.245.786 1.423.874.179.089.285.075.39-.045.105-.121.446-.523.565-.7.119-.177.239-.148.403-.089.164.059 1.04.49 1.219.58s.299.135.342.21c.045.074.045.428-.1.833z"></path></svg>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1 text-base leading-none">Integración Business Directa</h4>
+<p class="text-xs text-slate-600">Recibe notificaciones inmediatas sin necesidad de estar logueado. <span class="text-emerald-600 font-bold">Actúa al instante desde tu chat.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white" id="beneficios">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="flex flex-col lg:flex-row items-center gap-24">
+<div class="flex-1">
+<h2 class="text-3xl md:text-5xl font-extrabold mb-10 text-primary leading-tight">Lleva tu empresa al siguiente nivel con datos reales</h2>
+<div class="space-y-8">
+<div class="flex gap-6 group">
+<div class="size-10 rounded-xl bg-accent-green/10 text-accent-green flex items-center justify-center shrink-0 mt-1 group-hover:bg-accent-green group-hover:text-white transition-colors">
+<span class="material-symbols-outlined font-bold">done_all</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-primary mb-2">Decisiones basadas en datos reales</h4>
+<p class="text-[var(--text-muted)] text-base leading-relaxed">Elimina la intuición y opera con certezas estadísticas sobre tu rendimiento diario sin errores de captura.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="size-10 rounded-xl bg-accent-green/10 text-accent-green flex items-center justify-center shrink-0 mt-1 group-hover:bg-accent-green group-hover:text-white transition-colors">
+<span class="material-symbols-outlined font-bold">bolt</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-primary mb-2">Ahorro de tiempo masivo</h4>
+<p class="text-[var(--text-muted)] text-base leading-relaxed">Reduce en un 90% el trabajo manual de limpieza y consolidación de reportes obsoletos en Excel.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="size-10 rounded-xl bg-accent-green/10 text-accent-green flex items-center justify-center shrink-0 mt-1 group-hover:bg-accent-green group-hover:text-white transition-colors">
+<span class="material-symbols-outlined font-bold">trending_up</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-primary mb-2">Escalabilidad garantizada</h4>
+<p class="text-[var(--text-muted)] text-base leading-relaxed">Nuestra infraestructura cloud crece contigo, soportando múltiples sedes o unidades de negocio en tiempo real.</p>
+</div>
+</div>
+</div>
+<button class="mt-14 bg-accent-green text-white font-bold py-4 px-12 rounded-xl hover:bg-emerald-600 transition-all shadow-xl shadow-emerald-500/20">
+                        Empieza ahora gratis
+                    </button>
+</div>
+<div class="flex-1 w-full">
+<div class="relative group aspect-square rounded-[2rem] overflow-hidden bg-white p-4 shadow-2xl ring-1 ring-slate-100">
+<div class="w-full h-full rounded-[1.5rem] overflow-hidden relative">
+<div class="absolute inset-0 flex items-center justify-center z-20">
+<button class="size-20 rounded-full bg-white/40 backdrop-blur-xl flex items-center justify-center hover:scale-110 transition-transform shadow-2xl border border-white/50 group-hover:bg-accent-green group-hover:border-transparent transition-all">
+<span class="material-symbols-outlined text-white text-5xl">play_circle</span>
+</button>
+</div>
+<div class="absolute inset-0 bg-primary/20 z-10 group-hover:bg-primary/10 transition-colors"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Team of business professionals reviewing performance data on a large screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL71fpzO01zPtpq9kncEL1pve4-vW9EoTg5huWEvHydSpGT-C_CCnzqSv4UX1bXM2rRa5QUacWMlSyc4UL0E1P7mUQml78WPtXhSp8VVzakKxaO-8tFtT25fQxBxrNuYA4nwcx9CxnLPweZ_BEScCj7iMmrDcQxgaKORSCGdDtL8jHkbWQuAZF5ALkOUCNtn_wKy9h_dhVRXLODmOEdCjtRi3kjq6tKBnC8pmQQnkAiKKILPYOI2_NC0C2eOfkq4rOw4cGM2xvXM4')"></div>
+</div>
+<div class="absolute top-10 right-10 z-30 bg-white/90 backdrop-blur px-4 py-2 rounded-full border border-white/50 shadow-lg">
+<p class="text-[10px] font-bold text-primary uppercase tracking-wider flex items-center gap-2">
+<span class="size-2 rounded-full bg-red-500 animate-pulse"></span> Caso de éxito: Retail Co.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t border-slate-100 pt-24 pb-12">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 mb-20">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-3 mb-8">
+<div class="text-accent-green">
+<svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-2xl font-black tracking-tight text-primary">Ópera</span>
+</div>
+<p class="text-[var(--text-muted)] max-w-sm leading-relaxed text-base">
+                    Nuestra misión es democratizar el acceso a datos confiables para empresas en crecimiento, eliminando la incertidumbre en la toma de decisiones estratégicas.
+                </p>
+<div class="flex gap-5 mt-10">
+<a class="size-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-accent-green hover:border-accent-green transition-all" href="#"><span class="material-symbols-outlined text-xl">alternate_email</span></a>
+<a class="size-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-accent-green hover:border-accent-green transition-all" href="#"><span class="material-symbols-outlined text-xl">public</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-8 text-primary">Compañía</h4>
+<ul class="space-y-4 text-sm font-semibold text-[var(--text-muted)]">
+<li><a class="hover:text-accent-green transition-colors" href="#">Nosotros</a></li>
+<li><a class="hover:text-accent-green transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-accent-green transition-colors" href="#">Contacto</a></li>
+<li><a class="hover:text-accent-green transition-colors" href="#">Carreras</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-8 text-primary">Producto</h4>
+<ul class="space-y-4 text-sm font-semibold text-[var(--text-muted)]">
+<li><a class="hover:text-accent-green transition-colors" href="#">Arquitectura</a></li>
+<li><a class="hover:text-accent-green transition-colors" href="#">Centro de Alertas</a></li>
+<li><a class="hover:text-accent-green transition-colors" href="#">Integraciones</a></li>
+<li><a class="hover:text-accent-green transition-colors" href="#">Seguridad</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-8 text-primary">Legal</h4>
+<ul class="space-y-4 text-sm font-semibold text-[var(--text-muted)]">
+<li><a class="hover:text-accent-green transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-accent-green transition-colors" href="#">Términos</a></li>
+<li><a class="hover:text-accent-green transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between gap-8 text-sm font-medium text-[var(--text-muted)]">
+<p>© 2024 Ópera Data Systems. Todos los derechos reservados.</p>
+<div class="flex items-center gap-6">
+<span class="flex items-center gap-2"><span class="size-2 rounded-full bg-accent-green"></span> Estado: Óptimo</span>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
